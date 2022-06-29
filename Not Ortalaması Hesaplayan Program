@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class mohamm {
+    public static void main(String[] args) {
+       int mat,fizik,kimya, arapca, english;
+       Scanner mhmd = new Scanner(System.in);
+       System.out.print("matimatik notunuz giriniz: ");
+       mat = mhmd.nextInt();
+
+        System.out.print("fizik notunuz giriniz: ");
+        fizik = mhmd.nextInt();
+        System.out.print("kimya notunuz giriniz: ");
+        kimya = mhmd.nextInt();
+        System.out.print("arapca notunuz giriniz: ");
+        arapca = mhmd.nextInt();
+        System.out.print("english notunuz giriniz: ");
+        english = mhmd.nextInt();
+        double sonuc =((mat+fizik+kimya+arapca+english)/5);
+        System.out.println(sonuc);
+
+
+        boolean a= sonuc >= 60 ;
+        String result = a ? "basarili" : "basarisiz" ;
+        System.out.println(result);
+
+
+
+    }
+}
