@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class deneme {
+    public static void main(String[] args) {
+        int r ,a ;
+        Scanner scr = new Scanner(System.in);
+        double pi = 3.14  ;
+        System.out.print("Yaricapi r giriniz ");
+        r = scr.nextInt();
+
+        System.out.print("merkez açısısının ölçüsü a giriniz ");
+        a = scr.nextInt();
+      
+        double alan ;
+        alan=(pi*r*r*a)/360;
+
+        System.out.println("daire diliminin alanı=" +alan);
+
+
+    }
+}
