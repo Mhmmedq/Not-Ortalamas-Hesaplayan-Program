@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class deneme {
+    public static void main(String[] args) {
+        double kg , m ,vk ;
+        Scanner ktl =new Scanner(System.in);
+
+        System.out.print("Lütfen kilonuzu giriniz ");
+        kg = ktl.nextDouble();
+
+        System.out.print("Lütfen boyunuzu (metre cinsinde) giriniz ");
+        m = ktl.nextDouble();
+
+        vk =kg/(m*m) ;
+        System.out.println("Vücut Kitle İndeksiniz = "  +vk);
+
+    }
+}
