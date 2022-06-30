@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class deneme {
+    public static <tutar> void main(String[] args) {
+        Scanner scr = new Scanner(System.in);
+        double ar;
+        double el;
+        double do12 , muz, pa ;
+
+
+
+        System.out.print("Armut Kaç Kilo: ");
+        ar = scr.nextDouble();
+
+        System.out.print("Elma Kaç Kilo: ");
+        el = scr.nextDouble();
+
+        System.out.print("Domates Kaç Kilo: ");
+        do12 = scr.nextDouble();
+
+        System.out.print("Muz Kaç Kilo: ");
+        muz = scr.nextDouble();
+
+        System.out.print("Patlican Kaç Kilo: ");
+        pa = scr.nextDouble();
+        double tutar ;
+
+        tutar= ar*2.14+el*3.67+do12*1.11+muz*0.95+pa*5 ;
+
+        System.out.print("Toplam Tutar= " + tutar+ " TL" ) ;
+
+       
+
+
+
+    }
+}
