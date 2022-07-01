@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class mohamm {
+    public static void main(String[] args) {
+     int n1, n2 ,slkt;
+     Scanner scr = new Scanner(System.in);
+     System.out.print("birinci sayinizi giriniz : ");
+     n1= scr.nextInt();
+
+     System.out.print("ikinci sayinizi giriniz : ");
+     n2= scr.nextInt();
+
+     System.out.println("1-toplam\n2-cikartma\n3-carpma\n4-bolme\n   ");
+     System.out.print(" isleminizi seciniz : ");
+     slkt = scr.nextInt();
+
+     switch (slkt) {
+         case 1: System.out.println(n1+n2);
+             break;
+         case 2: System.out.println(n1-n2);
+             break;
+         case 3: System.out.println(n1*n2);
+             break;
+         case 4: switch (n2) {
+             case 0 : System.out.println("0 a bolunemeztir !!!");
+                     break;
+             default: System.out.println(n1/n2);
+                     break;
+         }
+         break;
+         default:System.out.println("hatali giris yaptiniz, tekrar deneyiniz !");
+     }
+
+    }
+}
