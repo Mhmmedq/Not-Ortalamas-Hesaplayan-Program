@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+
+
+public class giris {
+    public static void main(String[] args) {
+        int mat ,fzk,km, tr,en;
+        Scanner scr=new Scanner(System.in);
+
+        System.out.print("matematik notunuz :");
+        mat= scr.nextInt();
+
+        System.out.print("fizik notunuz :");
+        fzk= scr.nextInt();
+
+        System.out.print("kimye notunuz :");
+        km= scr.nextInt();
+
+        System.out.print("turkce notunuz :");
+        tr= scr.nextInt();
+
+        System.out.print("inglizce notunuz :");
+        en= scr.nextInt();
+        if (mat>100){System.out.print(mat=0);};
+        if (fzk>100){System.out.print(fzk=0);};
+        if (km>100){System.out.print(km=0);};
+        if (tr>100){System.out.print(tr=0);};
+        if (en>100){System.out.print(en=0);};
+
+        double averag;
+        averag=(mat+fzk+km+tr+en)/5 ;
+
+        if (averag<55){System.out.println("sinifte kaldiniz!");}
+        else {System.out.println("gectiniz tebrikler");};
+        System.out.println("ortalamaniz= "+averag);
+
+
+    }
+}
