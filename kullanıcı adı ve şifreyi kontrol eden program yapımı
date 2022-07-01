@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class mohamm {
+    public static void main(String[] args) {
+        String username,usr= ("muhammed") , password, pss = ("mhm123");
+        String cvp, ynpas;
+        Scanner scr = new Scanner(System.in);
+
+
+        System.out.print("kullanci adiniz ");
+        username = scr.nextLine();
+
+        System.out.print("sifreniz ");
+        password = scr.nextLine();
+
+        if (username.equals(usr) && password.equals(pss)) {
+            System.out.println("giris yaptiniz");
+
+        } else {
+            System.out.println("sifreniz hatalidir ");
+            System.out.println("sifrlamak isterniz evet YAZINIZ");
+            cvp = scr.nextLine();
+            if (cvp.equals("evet")) {
+                System.out.println("yeni sifrenizi giriniz");
+                ynpas = scr.nextLine();
+                if (ynpas.equals(pss)) {
+                    System.out.println(" yeni girdigin sifrenin eski sifre ile aynı olmamasini kontrol edin");
+
+                } else {
+                    System.out.println("sifreniz basarili olusturulmustur");
+
+                }
+
+
+            } else {
+                System.out.println("hatali tuslama yaptiniz!!");
+            }
+        }
+    }
+}
+
