@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+
+
+public class giris {
+    public static void main(String[] args) {
+        int heat;
+        Scanner scr= new Scanner(System.in);
+        System.out.print("sicakiligi giriniz !");
+        heat = scr.nextInt();
+
+    if (heat<5) {
+        System.out.println("kayak yapabilirsiniz");
+    }
+
+    else if (heat>5 && heat<=10) {System.out.println("sinemeye gidebilisiniz");}
+
+        else if (heat>10 && heat<=15) {System.out.println("sinemey gidebilisiniz\npiknige gidebilirsiniz");}
+
+        else if (heat>15 &&heat<=25) {System.out.println("piknige gidebilisiniz");}
+
+        else if (heat>25) {System.out.println("yuzmeye gidebilisiniz");}
+
+        }
+
+    }
