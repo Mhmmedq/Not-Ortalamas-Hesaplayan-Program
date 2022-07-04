@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class deneme {
+    public static <tutar> void main(String[] args) {
+        Scanner scr = new Scanner(System.in);
+       int yil;
+       System.out.print("yil giriniz..");
+       yil= scr.nextInt();
+        int ch;
+        ch =yil%4;
+        switch (ch) {
+            case 0:System.out.println(yil+" bir atik yildir");
+            break;
+            default:System.out.println(yil+"bir atik yil degildir");
+        }
+        
+    }
+}
