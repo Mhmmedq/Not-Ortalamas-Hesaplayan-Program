@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class deneme {
+    public static <tutar> void main(String[] args) {
+        Scanner scr = new Scanner(System.in);
+       int km , yas ,ytip;
+       double ss ,tt ;
+       System.out.print("mesafayi km olarak giriniz ");
+       km= scr.nextInt();
+        System.out.print("yasinizi giriniz ");
+        yas= scr.nextInt();
+        System.out.print("Yolculuk tipini giriniz (1 => Tek Yon , 2 => Gidis Donus ) ");
+        ytip= scr.nextInt();
+        if (yas<12){
+            ss=0.50;
+        } else if ((yas<=24)&&(yas>=12)) {
+            ss=0.9;
+        }else if (yas>=65){
+            ss=0.7;
+        }else {ss=1;}
+        if (ytip==2){ tt=1.6;
+        }else {
+            tt=1;
+        }
+        double ucret ,u1  ;
+        ucret =km * 0.10* ss *tt;
+        u1 = km*0.1 ;
+
+        if ((km>0)&&(yas>0)&&((ytip==1)||(ytip==2))) {
+            System.out.println("TEK bilet indirimsiz fiyati= " + u1 + " TL");
+            System.out.println("biletler indirimli tutar fiyati= " + ucret + " TL");
+        }else { System.out.println("hatali veri girdiniz !");
+        }
+    }
+}
