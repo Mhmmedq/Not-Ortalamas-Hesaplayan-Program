@@ -1,0 +1,157 @@
+import java.util.Scanner;
+
+public class deneme {
+    public static <tutar> void main(String[] args) {
+        Scanner scr = new Scanner(System.in);
+        int d, m ;
+        String burc= "";
+        boolean hata = false ;
+
+        System.out.print("dogdunuz ay ");
+        m = scr.nextInt();
+
+        System.out.print("dogdunuz gun ");
+        d = scr.nextInt();
+
+        if (m == 1) {
+            if (d >= 1 && d <= 31) {
+                if (d < 22) {
+                    burc = "oglak";
+                } else {
+                    burc = "kova";
+                }
+            } else {
+                hata=true;
+            }
+        }
+        else if (m == 2) {
+            if (d >= 1 && d <= 29) {
+                if (d < 20) {
+                    burc = "Kova ";
+                } else {
+                    burc = "Balık ";
+                }
+            } else {
+                hata=true;
+            }
+        }
+        else if (m == 3) {
+            if (d >= 1 && d <= 31) {
+                if (d < 21) {
+                    burc = "Balık";
+                } else {
+                    burc = "Koç ";
+                }
+            } else {
+                hata=true;
+            }
+        }
+        else if (m == 4) {
+            if (d >= 1 && d <= 30) {
+                if (d < 21) {
+                    burc = "Koç";
+                } else {
+                    burc = "Boğa ";
+                }
+            } else {
+                hata=true;
+            }
+        }
+        else if (m == 5) {
+            if (d >= 1 && d <= 31) {
+                if (d < 22) {
+                    burc = "Boğa";
+                } else {
+                    burc = "İkizler ";
+                }
+            } else {
+                hata=true;
+            }
+        }
+        else if (m == 6) {
+            if (d >= 1 && d <= 30) {
+                if (d < 23) {
+                    burc = "İkizler ";
+                } else {
+                    burc = "Yengeç ";
+                }
+            } else {
+                hata=true;
+            }
+        }
+        else if (m == 7) {
+            if (d >= 1 && d <= 31) {
+                if (d < 23) {
+                    burc = "Yengeç ";
+                } else {
+                    burc = "Aslan ";
+                }
+            } else {
+                hata=true;
+            }
+        }
+        else if (m == 8) {
+            if (d >= 1 && d <= 31) {
+                if (d < 23) {
+                    burc = "Aslan ";
+                } else {
+                    burc = "Başak ";
+                }
+            } else {
+                hata=true;
+            }
+        }
+        else if (m == 9) {
+            if (d >= 1 && d <= 31) {
+                if (d < 23) {
+                    burc = "Başak ";
+                } else {
+                    burc = "Terazi ";
+                }
+            } else {
+                hata=true;
+            }
+        }
+        else if (m == 10) {
+            if (d >= 1 && d <= 31) {
+                if (d < 23) {
+                    burc = "Terazi ";
+                } else {
+                    burc = "Akrep ";
+                }
+            } else {
+                hata=true;
+            }
+        }
+        else if (m == 11) {
+            if (d >= 1 && d <= 31) {
+                if (d < 22) {
+                    burc = "Akrep ";
+                } else {
+                    burc = "Yay ";
+                }
+            } else {
+                hata=true;
+            }
+        }
+        else if (m == 12) {
+            if (d >= 1 && d <= 31) {
+                if (d < 22) {
+                    burc = "Yay ";
+                } else {
+                    burc = "Oğlak ";
+                }
+            } else {
+                hata=true;
+            }
+        }
+        else {hata=true ;}
+
+
+        if (hata){System.out.println("hatali giris yaptiniz");
+        } else {System.out.println("burcunuz "+burc);}
+
+
+
+    }
+}
