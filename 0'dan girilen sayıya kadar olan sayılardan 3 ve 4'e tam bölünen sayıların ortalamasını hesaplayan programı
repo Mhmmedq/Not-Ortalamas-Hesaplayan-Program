@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class fgf {
+    public static void main(String[] args) {
+        int girilenSayi = 0, adet = 0, toplam = 0;
+        double ortalama;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Bir Sayi Giriniz : ");
+        girilenSayi = sc.nextInt();
+
+        for (int i = 1; i <= girilenSayi; i++) {
+            if ((i % 3 == 0 ) &&( i % 4 == 0)) {
+                toplam += i;
+                adet++;
+            }
+        }
+        System.out.println("toplam = "+toplam);
+        System.out.println("kac adet ="+ adet);
+        ortalama = toplam / (adet );
+        System.out.print(" sayilarin ortalamasi  :" + ortalama);
+
+    }
+}
